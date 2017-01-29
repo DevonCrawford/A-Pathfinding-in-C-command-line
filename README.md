@@ -1,3 +1,5 @@
+# A* Pathfinding in C (command Line)
+
 Recreation of my A* pathfinding algorithm except this time in C! Instead of a graphics interface this is meant to run on the command line and analyze a maze given by a .txt file. '#' characters are walls, 'O' characters are open, 'S' is the start and 'G' is the end. You can make any maze which is rectangular and this program will create a new file in the same directory called "nameSolution.txt". I included two test mazes named "maze.txt" and "sampleMaze2.txt". 
 
 I also time the performance to show the efficiency of my algorithm :)
