@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "funcDefns.h"
+
 // Reads grid from file
 // Returns 0 if correct and 1 if grid is incomplete
 int readFile(FILE *file, char grid[][size.width]) {
@@ -25,7 +30,7 @@ void writeFile(char grid[][size.width], char origName[]) {
 	FILE *file;
 
 	// Declaring strings for new file name
-	char insert[] = "solution";
+	char insert[] = "_solution";
 	char newName[strlen(origName) + strlen(insert)];
 
 	// Adds solution onto origName, keeping extension intact
