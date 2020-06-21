@@ -2,12 +2,8 @@
 #include<stdlib.h>
 #include<math.h>
 #include<string.h>
-#include <sys\timeb.h>
-#include"structs.c"
+#include <sys/timeb.h>
 #include"funcDefns.h"
-#include"grid.c"
-#include"file.c"
-#include"node.c"
 #define PI_2 3.14159/2
 
 /* path.c

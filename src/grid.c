@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "funcDefns.h"
+
 // Calculates the size of the grid
 GridSize getGridSize(FILE *file) {
 	char c = '\0';

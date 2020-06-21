@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include "funcDefns.h"
+
 // Clears the node to default values
 void clearNode(Node *node) {
 	node->parent = NULL;

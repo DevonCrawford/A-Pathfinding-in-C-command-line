@@ -1,0 +1,6 @@
+# Binaries and intermediates
+*.out
+*.o
+
+# Maze solutions
+*_solution.txt
