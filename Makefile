@@ -6,15 +6,15 @@ EXEC=pathfinding.out
 
 CFLAGS += -Wall -g -I$(INCLUDE_DIR)/ -lm
 
-COMPILE=$(CC) $(CFLAGS) -c $^ -o $@
-LINK_EXE=$(CC) $(CFLAGS) -o $@ $^
+COMPILE=$(CC) -c $^ -o $@ $(CFLAGS) 
+LINK_EXE=$(CC) -o $@ $^ $(CFLAGS) 
 
 # Create lists of src and object files for src dir
 SRC_FILES=$(wildcard $(SRC_DIR)/*.c)									# Get .c files in source
 SRC_OBJS=$(patsubst $(SRC_DIR)/%.c,$(BIN_DIR)/%.o, $(SRC_FILES))		# Get name of .o files in source
 
 # Create bin directory if it doesn't exist
-$(shell if [ ! -d "${BIN_DIR}" ]; then mkdir -p ${BIN_DIR}; fi;)
+$(shell [ ! -d "${BIN_DIR}" ] && mkdir -p ${BIN_DIR})
 
 # Create src object files
 $(BIN_DIR)/%.o: $(SRC_DIR)/%.c
